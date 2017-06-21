@@ -1,7 +1,5 @@
 # README
 
-[![](https://badge.imagelayers.io/softwarecraftsmen/atlassian-plugin-sdk:latest.svg)](https://imagelayers.io/?images=softwarecraftsmen/atlassian-plugin-sdk:latest)
-
 ## Prepare a docker host
 
 ```sh
