@@ -12,9 +12,14 @@ eval `docker-machine env atlassian` <3>
 2. Start the docker machine
 3. Setup the docker client to use the docker-machine
 
+## Build the Atlassian Plugin SDK image
+
+```sh
+docker-compose build
+```
+
 ## Run a Atlassian Plugin SDK instance
 
 ```sh
-docker pull softwarecraftsmen/atlassian-plugin-sdk
-docker run -it --name plugin-sdk  softwarecraftsmen/atlassian-plugin-sdk
+docker run -ti --rm --workdir /project -v dot_m2:/root/.m2 -v $PWD:/project softwarecraftsmen/atlassian-plugin-sdk bash -c "atlas-mvn -version"
 ```

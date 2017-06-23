@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie
+FROM openjdk:8-jdk
 MAINTAINER Software Craftsmen GmbH und CoKG <martin.ahrer@software-craftsmen.at>
 
 # BEGIN install atlassian plugin sdk

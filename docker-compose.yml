@@ -1,0 +1,6 @@
+version: "2.1"
+
+services:
+  sdk:
+    image: softwarecraftsmen/atlassian-plugin-sdk:6.2.14
+    build: ./
