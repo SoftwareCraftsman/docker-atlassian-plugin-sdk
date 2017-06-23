@@ -1,0 +1,1 @@
+alias atlas-mvnd='docker run -ti --rm -v dot_gradle:/root/.gradle -v ${PWD}:/project --workdir=/project softwarecraftsmen/atlassian-plugin-sdk:6.2.14 atlas-mvn ${@}'
